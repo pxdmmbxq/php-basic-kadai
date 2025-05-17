@@ -11,7 +11,7 @@
         <?php
         $order = ['TRUE','FALSE'];
         function sort_2way($array,$order){
-                    if($order == '昇順'){
+                    if($order == 'TRUE'){
                     echo '昇順にソートします。<br>';
                     sort($array);
                     foreach ($array as $num){
