@@ -25,14 +25,14 @@
 
         class Animal{
             private $name;
-            private $hieght;
+            private $height;
             private $weight;
-            public function show_hieght(){
-                echo $this->hieght . '<br>';
+            public function show_height(){
+                echo $this->height . '<br>';
             }
-            public function __construct(string $name, int $hieght, int $weight) {
+            public function __construct(string $name, int $height, int $weight) {
                 $this->name = $name;
-                $this->hieght = $hieght;
+                $this->height = $height;
                 $this->weight = $weight;
             }
         }         
@@ -44,9 +44,8 @@
         echo '<br>';
         print_r($animal) ;
         echo '<br>';
-        echo $food->show_price ();
-        echo '<br>';
-        echo $animal->show_hieght ();
+        $food->show_price ();
+        $animal->show_height ();
         ?>
     </p>
 
